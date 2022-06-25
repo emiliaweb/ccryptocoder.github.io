@@ -13,18 +13,13 @@
 }
 
 .title {
+    text-align: center;
     font-weight: 600;
     font-size: 44px;
     line-height: 58px;
     color: #0B46B8;
 }
 
-.wave {
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    svg {
-        width: 100vw;
-        height: 100%;
-    }
-}
+/* * {
+    background: rgba(89, 207, 89, 0.4);
+} */

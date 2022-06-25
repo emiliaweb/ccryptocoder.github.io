@@ -3,7 +3,9 @@
     min-height: 640px;
     padding: 202px 0 100px;
     position: relative;
+    overflow: hidden;
     &__title {
+        text-align: left;
         color: #FFFFFF;
         margin-bottom: 18px;
     }
@@ -13,5 +15,14 @@
         line-height: 23px;
         color: rgba(255, 255, 255, 0.7);
         max-width: 420px;
+    }
+    &__wave {
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        svg {
+            width: 100vw;
+            height: 100%;
+        }
     }
 }
