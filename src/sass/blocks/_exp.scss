@@ -1,0 +1,63 @@
+.exp {
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(92.65deg, #0B46B8 10.85%, #1A89E7 93.03%);
+    min-height: 370px;
+    padding: 110px 0 70px;
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 275px);
+        grid-template-rows: auto;
+        place-content: center;
+        column-gap: 40px;
+    }
+    &__item {
+        &-icon {
+            width: 77px;
+            height: 77px;
+            border-radius: 100%;
+            display: grid;
+            place-content: center;
+            background: rgba(255, 255, 255, 0.24);
+            margin: 0 auto;
+            margin-bottom: 2px;
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 26px;
+            text-align: center;
+            color: #FFFFFF;
+            margin-bottom: 1px;
+        }
+        &-subtitle {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 127%;
+            text-align: center;
+            color: #FFFFFF;
+            margin-bottom: 6px;
+        }
+        &-descr, &-descr a {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 126%;
+            text-align: center;
+            color: #FFFFFF; 
+            text-decoration: none;
+        }
+        &-descr a {
+            display: block;
+            margin-top: 6px;
+        }
+    }
+    &__wave {
+        position: absolute;
+        top: 0;
+        left: 0;
+        svg {
+            width: 100vw;
+            height: 100%;
+        }
+    }
+}
