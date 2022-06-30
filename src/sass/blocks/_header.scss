@@ -1,0 +1,27 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    height: 50px;
+    width: 100%;
+    &__nav {
+        padding: 13px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__item {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 23px;
+        color: #FFFFFF;
+        text-decoration: none;
+        &:hover {
+            color: rgb(245, 245, 245);
+        }
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+}
