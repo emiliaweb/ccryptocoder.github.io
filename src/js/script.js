@@ -4,5 +4,7 @@ window.addEventListener('DOMContentLoaded', () => {
     
     ratingProgress.forEach((item, i) => {
         item.style.width = ratingNums[i].innerText;
-    })
+    });
+
+    const header = document.querySelector('.header');
 })
