@@ -6,6 +6,7 @@
         grid-auto-rows: auto;
         column-gap: 22px;
         row-gap: 45px;
+        place-content: center;
     }
     &__item {
         &-top {
@@ -29,6 +30,23 @@
             height: 100%;
             background: linear-gradient(270deg, #1A89E7 0%, #0B46B8 100%);
             border-radius: 4px;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .rating {
+        &__grid {
+            grid-template-columns: repeat(2, 370px);
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .rating {
+        &__grid {
+            grid-template-columns: repeat(2, 355px);
+            column-gap: 26px;
         }
     }
 }

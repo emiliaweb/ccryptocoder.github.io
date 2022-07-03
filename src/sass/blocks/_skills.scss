@@ -53,3 +53,13 @@
         }
     }
 }
+
+@media (max-width: 991px) {
+    .skills {
+        &__grid {
+            padding: 0 26px;
+            grid-template-columns: repeat(2,1fr);
+            column-gap: 60px;
+        }
+    }
+}

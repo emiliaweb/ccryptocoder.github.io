@@ -34,3 +34,15 @@
         }
     }
 }
+
+@media (max-width: 991px) {
+    .container {
+        width: 752px;
+    }
+    .promo {
+        &__title {
+            font-size: 44px;
+            line-height: 58px;
+        }
+    }
+}
