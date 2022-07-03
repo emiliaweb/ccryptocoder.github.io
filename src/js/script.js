@@ -7,4 +7,27 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     const header = document.querySelector('.header');
+    let lastScrollTop = 0;
+
+    if (window.innerWidth < 768) {
+        window.addEventListener('scroll', () => {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;  
+            if (scrollTop > lastScrollTop) {
+                header.style.top = '-100%';
+            }else if (window.pageYOffset == 0 || document.documentElement.scrollTop == 0) {
+                header.style.top = '0';
+            }else {
+                header.style.top = '0';
+            }
+            lastScrollTop = scrollTop;
+        });
+    }
+
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 100 || document.documentElement.scrollTop > 100) {
+            header.classList.add('header_scrolled');
+        } else if (window.pageYOffset == 0 || document.documentElement.scrollTop == 0) {
+            header.classList.remove('header_scrolled');
+        }
+    });
 })
