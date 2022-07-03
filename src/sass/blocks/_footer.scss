@@ -1,0 +1,42 @@
+.footer {
+    &__main {
+        min-height: 200px;
+        padding: 40px 0 46px;
+        background: url('../img/footer-bg.jpg') center center / cover no-repeat;
+    }
+    &__title {
+        text-align: left;
+        color: #FFFFFF;
+        margin-bottom: 5px;
+    }
+    &__subtitle {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 26px;
+        color: #FFFFFF;
+    }
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__social {
+        display: flex;
+        &-link {
+            &:not(:last-child) {
+                margin-right: 25px;
+            }
+        }
+    }
+    &__bottom {
+        padding: 12px 0 15px;
+        background-color: #010712;
+    }
+    &__cr {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
