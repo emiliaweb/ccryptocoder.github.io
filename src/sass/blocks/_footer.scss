@@ -40,3 +40,52 @@
         color: #FFFFFF;
     }
 }
+
+@media (max-width: 767px) {
+    .footer {
+        &__subtitle {
+            font-size: 20px;
+            line-height: 24px;
+        }
+        &__social {
+            &-link {
+                img {
+                    width: 35px;
+                    height: 35px;
+                }
+                &:not(:last-child) {
+                    margin-right: 15px;
+                }
+            }
+        }
+        &__flex {
+            align-items: flex-end;
+        }
+        &__cr {
+            font-size: 18px;
+            line-height: 18px;        
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .footer {
+        &__social {
+            flex-direction: column;
+            &-link {
+                &:not(:last-child) {
+                    margin-right: 0;
+                    margin-bottom: 15px;
+                }
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+        &__cr {
+            font-size: 16px;
+            line-height: 16px;
+        }
+    }
+}

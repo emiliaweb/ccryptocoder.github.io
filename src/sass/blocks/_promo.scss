@@ -46,3 +46,35 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .promo {
+        &__wave {
+            bottom: -4px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .promo {
+        &__title {
+            font-size: 34px;
+            line-height: 40px;
+        }
+        &__skills {
+            font-size: 16px;
+        }
+        &__wave {
+            bottom: -7px;
+        }
+    }
+}
+
+@media (max-width: 374px) {
+    .promo {
+        &__title {
+            font-size: 32px;
+            line-height: 40px;
+        }
+    }
+} 

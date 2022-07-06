@@ -50,3 +50,19 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .rating {
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .rating {
+        &__grid {
+            grid-template-columns: 1fr;
+        }
+    }
+}

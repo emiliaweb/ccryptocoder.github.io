@@ -63,3 +63,23 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .skills {
+        &__wave {
+            top: -4px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .skills {
+        &__wave {
+            top: -9px;
+        }
+        &__grid {
+            grid-template-columns: 1fr;
+            padding-right: 0;
+        }
+    }
+}

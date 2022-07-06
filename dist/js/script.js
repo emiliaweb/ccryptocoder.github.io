@@ -30,4 +30,20 @@ window.addEventListener('DOMContentLoaded', () => {
             header.classList.remove('header_scrolled');
         }
     });
-})
+
+    const headerHamburger = document.querySelector('[data-header-hamburger]');
+    const headerNav = document.querySelector('[data-header-nav]');
+    const headerItems = Array.from(document.querySelectorAll('[data-header-item]'));
+
+    headerHamburger.addEventListener('click', () => {
+        headerNav.classList.add('header__nav_active');
+    });
+    headerNav.addEventListener('click', (e) => {
+        e.target.classList.remove('header__nav_active');
+    });
+    headerItems.forEach(item => {
+        item.addEventListener('click', () => {
+            headerNav.classList.remove('header__nav_active');
+        });
+    });
+});

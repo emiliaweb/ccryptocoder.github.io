@@ -70,3 +70,26 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .exp {
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .exp {
+        &__grid {
+            grid-template-columns: 1fr;
+            justify-items: center;
+            row-gap: 30px;
+        }
+        &__item {
+            &:last-child {
+                grid-column: unset;
+            }
+        }
+    }
+}
