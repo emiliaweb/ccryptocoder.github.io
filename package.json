@@ -4,10 +4,11 @@
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
+  "homepage": "https://ccryptocoder.github.io",
   "devDependencies": {
     "browser-sync": "^2.27.7",
     "gulp-autoprefixer": "^8.0.0",
@@ -26,6 +27,7 @@
     "not dead"
   ],
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "gulp": "^4.0.2"
   }
 }
