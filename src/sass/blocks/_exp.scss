@@ -79,7 +79,7 @@
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 576px) {
     .exp {
         &__grid {
             grid-template-columns: 1fr;
@@ -87,8 +87,10 @@
             row-gap: 30px;
         }
         &__item {
+            max-width: 370px;
             &:last-child {
                 grid-column: unset;
+                max-width: 370px;
             }
         }
     }
