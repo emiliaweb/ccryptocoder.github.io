@@ -21,8 +21,13 @@
         font-weight: 500;
         font-size: 20px;
         line-height: 23px;
-        color: rgba(255, 255, 255, 0.7);
-        max-width: 420px;
+        color: rgba(255, 255, 255, 0.9);
+        max-width: 450px;
+        p {
+            &:nth-child(2) {
+                opacity: .3;
+            }
+        }
     }
     &__wave {
         position: absolute;
