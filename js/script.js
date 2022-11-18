@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const ratingProgress = Array.from(document.querySelectorAll('.rating__item-progress'));   
     
     ratingProgress.forEach((item, i) => {
-        item.style.width = ratingNums[i].innerText;
+        item.style.width = ratingNums[i].getAttribute('data-percent');
     });
 
     const header = document.querySelector('.header');
