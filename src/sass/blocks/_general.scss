@@ -46,7 +46,8 @@
 
 @media (max-width: 767px) {
     .container {
-        width: 540px !important;
+        width: 100% !important;
+        padding: 0 30px;
     }
     .title {
         font-size: 34px;
