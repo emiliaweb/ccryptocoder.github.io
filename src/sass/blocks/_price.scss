@@ -1,0 +1,97 @@
+.price {
+    padding: 60px 0 90px;
+    &__row {
+        margin-top: 50px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 40px;
+    }
+    &__col {
+        max-width: 375px;
+    }
+    &__subtitle {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 1.2em;
+        color: #0B46B8;
+    }
+    &__item {
+        position: relative;
+        padding-left: 26px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 3px;
+            left: 0;
+            width: 16px;
+            height: 16px;
+            background: linear-gradient(106.7deg, #1A89E7 8.65%, #0B46B8 78.53%);
+            border-radius: 100%;
+        }
+        &-head {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 700;
+            color: #000000;
+        }
+        &-title {
+            font-size: 18px;
+            line-height: 1.16em;
+        }
+        &-price {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 1.125em;
+        }
+        &-body {
+            margin-top: 8px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.125em;
+            color: #000000;
+        }
+        &:not(:first-child) {
+            margin-top: 20px;
+        }
+        &:first-child {
+            margin-top: 26px;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .price {
+        &__img {
+            display: none;
+        }
+        &__subtitle {
+            font-size: 24px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .price {
+        &__row {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .price {
+        &__row {
+            gap: 20px;
+        }
+        &__item {
+            &-title {
+                font-size: 16px;
+            }
+            &-price {
+                font-size: 14px;
+            }
+        }
+    }
+}
