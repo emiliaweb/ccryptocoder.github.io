@@ -18,7 +18,6 @@
                 <nav class="header__nav" data-header-nav>
                     <a href="#about" class="header__item" data-header-item>Обо мне</a>
                     <a href="#skills" class="header__item" data-header-item>Мои навыки</a>
-                    <a href="#service" class="header__item" data-header-item>Услуги</a>
                     <a href="#portfolio" class="header__item" data-header-item>Портфолио</a>
                     <a href="#contacts" class="header__item" data-header-item>Контакты</a>
                 </nav>
@@ -208,160 +207,155 @@
     <section class="portfolio" id="portfolio">
         <div class="container">
             <h2 class="title portfolio__title">Портфолио</h2>
-            <div class="portfolio__grid">
 
-                <div class="portfolio__item">
-                    <div class="portfolio__item-img">
-                        <img src="img/bilimorda.jpg" alt="">
+            <div class="portfolio__nav">
+                <a href="#" class="portfolio__btn portfolio__btn_active" data-switch="1">Верстка</a>
+                <a href="#" class="portfolio__btn" data-switch="2">JavaScript</a>
+                <a href="#" class="portfolio__btn" data-switch="3">ReactJS</a>
+            </div>
+
+            <div data-tab="1">
+
+                <div class="portfolio__grid">
+                    <div class="portfolio__item first">
+                        <div class="portfolio__item-img">
+                            <img src="img/bilimorda.jpg" alt="">
+                        </div>
+                        <div class="portfolio__item-overlay">
+                            <div class="portfolio__item-title">Bilim Ordasy</div>
+                            <a target="_blank" href="https://bilimordasy.kz/" class="portfolio__item-link">Перейти -></a>
+                        </div>
                     </div>
-                    <div class="portfolio__item-overlay">
-                        <div class="portfolio__item-title">Bilim Ordasy</div>
-                        <a target="_blank" href="https://bilimordasy.kz/" class="portfolio__item-link">Перейти -></a>
+    
+                    <div class="portfolio__item">
+                        <div class="portfolio__item-img">
+                            <img src="img/guideo-updated.jpg" alt="">
+                        </div>
+                        <div class="portfolio__item-overlay">
+                            <div class="portfolio__item-title">Guideo</div>
+                            <a target="_blank" href="https://guideo.kz/" class="portfolio__item-link">Перейти -></a>
+                        </div>
+                    </div>
+    
+                    <div class="portfolio__item third">
+                        <div class="portfolio__item-img">
+                            <img src="img/uber.jpg" alt="">
+                        </div>
+                        <div class="portfolio__item-overlay">
+                            <div class="portfolio__item-title">Uber Moscow</div>
+                            <a target="_blank" href="https://emiliaweb.github.io/uber/dist/" class="portfolio__item-link">Перейти -></a>
+                        </div>
+                    </div>
+    
+                    <div class="portfolio__item">
+                        <div class="portfolio__item-img">
+                            <img src="img/runsmart.png" alt="">
+                        </div>
+                        <div class="portfolio__item-overlay">
+                            <div class="portfolio__item-title">Run Smart</div>
+                            <a target="_blank" href="https://emiliaweb.github.io/runsmart/dist/" class="portfolio__item-link">Перейти -></a>
+                        </div>
+                    </div>
+    
+                    <div class="portfolio__item">
+                        <div class="portfolio__item-img">
+                            <img src="img/openbiz-upd.jpg" alt="">
+                        </div>
+                        <div class="portfolio__item-overlay">
+                            <div class="portfolio__item-title">Openbiz</div>
+                            <a target="_blank" href="https://openbiz.kz/" class="portfolio__item-link">Перейти -></a>
+                        </div>
+                    </div>
+    
+                    <div class="portfolio__item">
+                        <div class="portfolio__item-img">
+                            <img src="img/nomad.jpg" alt="">
+                        </div>
+                        <div class="portfolio__item-overlay">
+                            <div class="portfolio__item-title">Nomad Rights</div>
+                            <a target="_blank" href="https://nomadrights.kz/" class="portfolio__item-link">Перейти -></a>
+                        </div>
+                    </div>
+    
+                    <div class="portfolio__item">
+                        <div class="portfolio__item-img">
+                            <img src="img/ubes-1.jpg" alt="">
+                        </div>
+                        <div class="portfolio__item-overlay">
+                            <div class="portfolio__item-title">Ulttyq Ustaz</div>
+                            <a target="_blank" href="https://ubes.kz/" class="portfolio__item-link">Перейти -></a>
+                        </div>
+                    </div>
+    
+                    <div class="portfolio__item">
+                        <div class="portfolio__item-img">
+                            <img src="img/admo-partners.png" alt="">
+                        </div>
+                        <div class="portfolio__item-overlay">
+                            <div class="portfolio__item-title">ADMO</div>
+                            <a target="_blank" href="https://emiliaweb.github.io/ADMO/app/partners.html" class="portfolio__item-link">Перейти -></a>
+                        </div>
+                    </div>
+    
+                    <div class="portfolio__item">
+                        <div class="portfolio__item-img">
+                            <img src="img/oofd-kaztel.png" alt="">
+                        </div>
+                        <div class="portfolio__item-overlay">
+                            <div class="portfolio__item-title">OOFD Kaztelecom</div>
+                            <a target="_blank" href="https://emiliaweb.github.io/kaztelecom/app/" class="portfolio__item-link">Перейти -></a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="portfolio__item">
-                    <div class="portfolio__item-img">
-                        <img src="img/guideo-updated.jpg" alt="">
-                    </div>
-                    <div class="portfolio__item-overlay">
-                        <div class="portfolio__item-title">Guideo</div>
-                        <a target="_blank" href="https://guideo.kz/" class="portfolio__item-link">Перейти -></a>
-                    </div>
-                </div>
+                <a href="#" class="portfolio__more">Показать больше</a>
 
-                <div class="portfolio__item">
-                    <div class="portfolio__item-img">
-                        <img src="img/uber.jpg" alt="">
-                    </div>
-                    <div class="portfolio__item-overlay">
-                        <div class="portfolio__item-title">Uber Moscow</div>
-                        <a target="_blank" href="https://emiliaweb.github.io/uber/dist/" class="portfolio__item-link">Перейти -></a>
-                    </div>
-                </div>
+            </div>
 
-                <div class="portfolio__item">
-                    <div class="portfolio__item-img">
-                        <img src="img/runsmart.png" alt="">
-                    </div>
-                    <div class="portfolio__item-overlay">
-                        <div class="portfolio__item-title">Run Smart</div>
-                        <a target="_blank" href="https://emiliaweb.github.io/runsmart/dist/" class="portfolio__item-link">Перейти -></a>
-                    </div>
-                </div>
+            <div class="hidden" data-tab="2">
 
-                <div class="portfolio__item">
-                    <div class="portfolio__item-img">
-                        <img src="img/openbiz-upd.jpg" alt="">
+                <div class="portfolio__grid portfolio__grid_even">
+                    <div class="portfolio__item">
+                        <div class="portfolio__item-img">
+                            <img src="img/stopwatch.JPG" alt="">
+                        </div>
+                        <div class="portfolio__item-overlay">
+                            <div class="portfolio__item-title">Stopwatch</div>
+                            <a target="_blank" href="https://emiliaweb.github.io/stopwatch/dist/" class="portfolio__item-link">Перейти -></a>
+                        </div>
                     </div>
-                    <div class="portfolio__item-overlay">
-                        <div class="portfolio__item-title">Openbiz</div>
-                        <a target="_blank" href="https://openbiz.kz/" class="portfolio__item-link">Перейти -></a>
-                    </div>
-                </div>
-
-                <div class="portfolio__item">
-                    <div class="portfolio__item-img">
-                        <img src="img/ubes-1.jpg" alt="">
-                    </div>
-                    <div class="portfolio__item-overlay">
-                        <div class="portfolio__item-title">Ulttyq Ustaz</div>
-                        <a target="_blank" href="https://ubes.kz/" class="portfolio__item-link">Перейти -></a>
-                    </div>
-                </div>
-
-                <div class="portfolio__item">
-                    <div class="portfolio__item-img">
-                        <img src="img/nomad.jpg" alt="">
-                    </div>
-                    <div class="portfolio__item-overlay">
-                        <div class="portfolio__item-title">Nomad Rights</div>
-                        <a target="_blank" href="https://nomadrights.kz/" class="portfolio__item-link">Перейти -></a>
-                    </div>
-                </div>
-
-                <div class="portfolio__item">
-                    <div class="portfolio__item-img">
-                        <img src="img/stopwatch.JPG" alt="">
-                    </div>
-                    <div class="portfolio__item-overlay">
-                        <div class="portfolio__item-title">Stopwatch</div>
-                        <a target="_blank" href="https://emiliaweb.github.io/stopwatch/dist/" class="portfolio__item-link">Перейти -></a>
+    
+                    <div class="portfolio__item">
+                        <div class="portfolio__item-img">
+                            <img src="img/date-calc.png" alt="">
+                        </div>
+                        <div class="portfolio__item-overlay">
+                            <div class="portfolio__item-title">Date Countdown</div>
+                            <a target="_blank" href="https://emiliaweb.github.io/stopwatch/dist/" class="portfolio__item-link">Перейти -></a>
+                        </div>
                     </div>
                 </div>
 
             </div>
+
+            <div class="hidden" data-tab="3">
+
+                <div class="portfolio__grid portfolio__grid_even">
+                    <div class="portfolio__item">
+                        <div class="portfolio__item-img">
+                            <img src="img/notes-app.png" alt="">
+                        </div>
+                        <div class="portfolio__item-overlay">
+                            <div class="portfolio__item-title">Notes</div>
+                            <a target="_blank" href="https://emiliaweb.github.io/notes-app/" class="portfolio__item-link">Перейти -></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </section>
-
-    <div class="price" id="service">
-        <div class="container">
-            <h2 class="title price__title">Услуги</h2>
-            <div class="price__row">
-                <div class="price__col">
-                    <h3 class="price__subtitle">Верстка</h3>
-
-                    <div class="price__item">
-                        <div class="price__item-head">
-                            <div class="price__item-title">Landing page</div>
-                            <div class="price__item-price"></div>
-                        </div>
-                        <div class="price__item-body">Одностраничный сайт для презентации услуг/товаров/...</div>
-                    </div>
-
-                    <div class="price__item">
-                        <div class="price__item-head">
-                            <div class="price__item-title">Многостраничный</div>
-                            <div class="price__item-price"></div>
-                        </div>
-                        <div class="price__item-body">Сайт-визитка, или сайты от двух до пяти страниц</div>
-                    </div>
-
-                    <div class="price__item">
-                        <div class="price__item-head">
-                            <div class="price__item-title">Корпоративный сайт</div>
-                            <div class="price__item-price"></div>
-                        </div>
-                        <div class="price__item-body">Сайт от шести до двенадцати страниц для более крупных компаний</div>
-                    </div>
-
-                </div>
-                <div class="price__col">
-                    <div class="price__img">
-                        <img src="img/price-img.svg" alt="">
-                    </div>
-                </div>
-                <div class="price__col">
-                    <h3 class="price__subtitle">Посадка на CMS</h3>
-
-                    <div class="price__item">
-                        <div class="price__item-head">
-                            <div class="price__item-title">Landing page</div>
-                            <div class="price__item-price"></div>
-                        </div>
-                        <div class="price__item-body">Одностраничный сайт c возможностью редактировать контент</div>
-                    </div>
-
-                    <div class="price__item">
-                        <div class="price__item-head">
-                            <div class="price__item-title">Многостраничный</div>
-                            <div class="price__item-price"></div>
-                        </div>
-                        <div class="price__item-body">Сайт-визитка, или сайты от двух до пяти страниц с функционирующей формой отправки и др</div>
-                    </div>
-
-                    <div class="price__item">
-                        <div class="price__item-head">
-                            <div class="price__item-title">Корпоративный сайт</div>
-                            <div class="price__item-price"></div>
-                        </div>
-                        <div class="price__item-body">Сайт от шести до двенадцати страниц с функционирующим блогом, формой отправки и др</div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
 
     <footer class="footer" id="contacts">
         <div class="footer__main">
@@ -391,6 +385,7 @@
         </div>
     </footer>
 
+    <script src="js/portfolio.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
