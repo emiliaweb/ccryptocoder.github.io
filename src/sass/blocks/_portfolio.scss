@@ -44,7 +44,7 @@
             --clr: #0B46B8;
         }
         &:hover {
-            opacity: .85;
+            opacity: .75;
         }
     }
     &__grid {
@@ -56,6 +56,9 @@
         row-gap: 18px;
         column-gap: 21px;
         place-content: center;
+        &_even {
+            grid-template-columns: repeat(4, 1fr);
+        }
     }
     &__item {
         position: relative;
