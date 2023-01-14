@@ -19,4 +19,35 @@ window.addEventListener('DOMContentLoaded', () => {
             tabs[i].classList.remove('hidden');
         })
     })
+
+    const items = tabs[0].querySelectorAll('.portfolio__item');
+    const showMore = tabs[0].querySelector('.portfolio__more');
+
+    const showAllItems = () => {
+        items.forEach(item => {
+            item.classList.remove('hidden');
+        });
+    }
+
+    const hideItems = () => {
+        items.forEach((item, i) => {
+            if (i > 6) {
+                item.classList.add('hidden');
+            }
+        });
+    }
+
+    hideItems();
+
+    showMore.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (showMore.textContent == 'Показать больше') {
+            showAllItems();
+            showMore.textContent = 'Скрыть';
+        } else {
+            hideItems();
+            showMore.textContent = 'Показать больше';
+        }
+    })
+
 })
