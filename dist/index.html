@@ -207,9 +207,16 @@
     <section class="portfolio" id="portfolio">
         <div class="container">
             <h2 class="title portfolio__title">Портфолио</h2>
-            <div class="portfolio__grid">
 
-                <div class="portfolio__item">
+            <div class="portfolio__nav">
+                <a href="#" class="portfolio__btn portfolio__btn_active" data-switch="1">Верстка</a>
+                <a href="#" class="portfolio__btn" data-switch="2">JavaScript</a>
+                <a href="#" class="portfolio__btn" data-switch="3">ReactJS</a>
+            </div>
+
+            <div class="portfolio__grid" data-tab="1">
+
+                <div class="portfolio__item first">
                     <div class="portfolio__item-img">
                         <img src="img/bilimorda.jpg" alt="">
                     </div>
@@ -229,7 +236,7 @@
                     </div>
                 </div>
 
-                <div class="portfolio__item">
+                <div class="portfolio__item third">
                     <div class="portfolio__item-img">
                         <img src="img/uber.jpg" alt="">
                     </div>
@@ -269,7 +276,7 @@
                     </div>
                 </div>
 
-                <div class="portfolio__item">
+                <div class="portfolio__item last">
                     <div class="portfolio__item-img">
                         <img src="img/nomad.jpg" alt="">
                     </div>
@@ -278,6 +285,10 @@
                         <a target="_blank" href="https://nomadrights.kz/" class="portfolio__item-link">Перейти -></a>
                     </div>
                 </div>
+
+            </div>
+
+            <div class="portfolio__grid hidden" data-tab="2">
 
                 <div class="portfolio__item">
                     <div class="portfolio__item-img">
@@ -290,6 +301,8 @@
                 </div>
 
             </div>
+
+
         </div>
     </section>
 
@@ -321,6 +334,7 @@
         </div>
     </footer>
 
+    <script src="js/portfolio.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
